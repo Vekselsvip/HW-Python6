@@ -1,19 +1,10 @@
-x = int(input('print number '))
-if x < 0:
-    print(x)
-
-x = int(input('print number '))
-if x < 20:
-    print('yes, it\'s less then 20')
+y = int(input('print year'))
+if y % 4 != 0:
+    print('odd')
+elif y % 100 == 0:
+    if y % 400 == 0 :
+        print('even')
+    else:
+        print('odd')
 else:
-    print('it\'s at less 20')
-
-x = int(input('print number '))
-x = x % 2
-if x == 0:
-    print('it\'s even number')
-else:
-    print('it\'s odd number')
-
-x, y, z = int(input('x=')), int(input('y=')), int(input('z='))
-print(max(x, y, z))
+    print('even')
